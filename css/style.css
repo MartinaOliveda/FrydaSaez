@@ -60,7 +60,7 @@ a {
 @media (min-width: 490px) {
   .navbar-nav.navbar-center {
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: 30%;
     transform: translatex(-50%);
     background-color: white;
@@ -75,13 +75,19 @@ a {
 @media (max-width: 489px) {
   .navbar-nav.navbar-center {
     position: absolute;
-    left: 80%;
+    left: 65%;
     top: 95%;
     transform: translatex(-50%);
     background-color: white;
     padding: 2rem;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   }
+}
+.navbar-nav.navbar-center li {
+  font-size: 12px;
+  font-family: "Lato", serif;
+  font-weight: bold;
+  color: black;
 }
 
 .fotogrid img {
