@@ -103,7 +103,8 @@ a{
         @media (max-width: "450px") {
             font-size: 12px;
             text-align: justify;   
-            padding-right: 9rem;    
+            padding-right: 3rem;
+            padding-left: 5rem;    
         }
     }
 }
@@ -148,7 +149,12 @@ a{
     padding-top: 4rem;
     @media (max-width:"490px") {
         font-size: 10px;
-        padding-left: 5rem;
+        padding-left: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img {
+            width: 75px;
+        }
     }
     
  }

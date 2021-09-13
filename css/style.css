@@ -109,7 +109,8 @@ a {
   .row p {
     font-size: 12px;
     text-align: justify;
-    padding-right: 9rem;
+    padding-right: 3rem;
+    padding-left: 5rem;
   }
 }
 
@@ -159,7 +160,12 @@ a {
 @media (max-width: 490px) {
   .servicios {
     font-size: 10px;
-    padding-left: 5rem;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .servicios img {
+    width: 75px;
   }
 }
 
