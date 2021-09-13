@@ -57,17 +57,31 @@ a {
   padding-top: 0;
 }
 
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translatex(-50%);
+@media (min-width: 490px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translatex(-50%);
+    background-color: white;
+  }
+  .navbar-nav.navbar-center li {
+    font-size: 13px;
+    font-family: "Lato", serif;
+    font-weight: bold;
+    color: black;
+  }
 }
-.navbar-nav.navbar-center li {
-  font-size: 13px;
-  font-family: "Lato", serif;
-  font-weight: bold;
-  color: black;
+@media (max-width: 489px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 80%;
+    top: 95%;
+    transform: translatex(-50%);
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  }
 }
 
 .fotogrid img {
@@ -160,7 +174,7 @@ a {
 @media (max-width: 490px) {
   .servicios {
     font-size: 10px;
-    padding-left: 3rem;
+    padding-left: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

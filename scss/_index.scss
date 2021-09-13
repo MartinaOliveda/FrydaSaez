@@ -56,17 +56,34 @@ a{
 }
 
 .navbar-nav.navbar-center {
-   position: absolute;
+   @media (min-width: 490px) {
+       position: absolute;
     left: 50%;
     top: 30%;
     transform: translatex(-50%);
+    background-color: white; 
+    
    li {
         font-size: 13px;
         font-family: 'Lato', serif;
         font-weight: bold;
-        color: black;
- }   
-}
+        color: black;   
+        }   
+    }
+    @media (max-width: 489px) {
+        position: absolute;
+        left: 80%;
+        top: 95%;
+        transform: translatex(-50%);
+        background-color: white; 
+        padding: 2rem;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
+        
+                  
+        }
+        
+    }
+
 
 .fotogrid img {
     display: block;
@@ -135,7 +152,7 @@ a{
     padding-top: 3rem;
     justify-content: center;
     @media (max-width:"490px") {
-        padding-right: 40px;;
+        padding-right: 40px;
     }
 }
 
@@ -149,7 +166,7 @@ a{
     padding-top: 4rem;
     @media (max-width:"490px") {
         font-size: 10px;
-        padding-left: 3rem;
+        padding-left: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         img {
@@ -221,4 +238,4 @@ form {
             padding-right: 6rem;    
         }
     }
-}
+} 
