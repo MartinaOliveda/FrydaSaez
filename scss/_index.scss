@@ -108,8 +108,18 @@ a{
         padding-left: 6rem;
         padding-top: 4rem;
         font-family: 'Lato', serif;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
+        @media (max-width: "450px") {
+            color: white;
+            text-align: left;
+            padding-left: 4rem;
+            padding-top: 4rem;
+            font-family: 'Lato', serif;
+            font-size: 15px;
+            font-weight: bold;
+            
+        }
     }
     p {
         color: white;
@@ -123,8 +133,8 @@ a{
         @media (max-width: "450px") {
             font-size: 12px;
             text-align: justify;   
-            padding-right: 3rem;
-            padding-left: 5rem;    
+            padding-right: 4rem;
+            padding-left: 4rem;    
         }
     }
 }
@@ -149,13 +159,14 @@ a{
 
 #servicios {
     font-family: 'Lato', serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     padding-top: 3rem;
     justify-content: center;
     @media (max-width:"490px") {
-        padding-right: 40px;
+        padding-right: 0px;
+        font-size: 15px;
     }
 }
 
@@ -165,19 +176,26 @@ a{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 6rem;
-    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     @media (max-width:"490px") {
         font-size: 10px;
-        padding-left: 1rem;
+        padding-left: 0rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         img {
             width: 75px;
         }
-    }
+    } 
     
  }
+    .servicios img:hover {
+        transform: scale(1.2);
+    }
+
+    .servicios img {
+        transition: transform .2s;
+    }
 
 
 #redes {
@@ -214,16 +232,22 @@ form {
 #redes{
     background-color: #2aa090;
     padding-bottom: 5rem;
+    @media (max-width:490px) {
+        padding-bottom: 2rem;
+        
+    }
     h2 {
         color: white;
         text-align: left;
         padding-left: 6rem;
         padding-top: 4rem;
         font-family: 'Lato', serif;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         @media (max-width:490px) {
-            padding-left: 5rem;
+            padding-left: 4rem;
+            font-size: 20px;
+            padding-top: 2rem;
         }
     }
     p {
@@ -231,14 +255,16 @@ form {
         color: white;
         text-align: left;
         padding-left: 6rem;
-        padding-right: 5rem;
         padding-bottom: 0.5rem;
         font-family: 'Lato', serif;
         font-size: 20px;
         @media (max-width: "450px") {
             font-size: 12px;
             text-align: left;   
-            padding-right: 6rem;    
+            padding-right: 8rem;   
+            padding-top: 0rem; 
+            padding-bottom: 0rem;
+            padding-left: 4rem;
         }
     }
 } 
